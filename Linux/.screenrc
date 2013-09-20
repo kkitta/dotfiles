@@ -1,0 +1,8 @@
+altscreen on
+startup_message off
+termcapinfo xterm* ti@:te@
+
+shelltitle "$ |bash"
+hardstatus alwayslastline "%{= db}> %{= .d}%-w%{=u .g}%n %t%{= .d}%+w"
+
+defscrollback 2000
