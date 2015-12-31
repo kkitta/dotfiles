@@ -1,6 +1,7 @@
 .PHONY: link
 
 link:
-	find ${PWD} -type f ! -name 'Makefile' \
-	  | xargs -I @ bash -c 'ln -sfhv @ ~/$$( echo @ | sed "s|${PWD}/||" )'
-	git config --global include.path '~/.gitconfig.core'
+	git ls-files .[A-Za-z0-9]* \
+	  | xargs -I @ ln -sfhv ${PWD}/@ ~/@
+	git ls-files .gitconfig.* \
+	  | xargs -I @ git config --global include.path '~/@'
