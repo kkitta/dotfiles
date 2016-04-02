@@ -10,7 +10,7 @@ else
   PS1='\[\e[32m\]\u\[\e[34m\]@\[\e[32m\]\h \[\e[34m\]\w\n\$ \[\e[0m\]'
 fi
 
-PROMPT_COMMAND='printf "\n\e[4;1;30m%*s\e[0m" ${COLUMNS}'
+PROMPT_COMMAND='printf "\e[4;90m%${COLUMNS}s\e[0m\n"'
 
 alias ls='ls -AG'
 
