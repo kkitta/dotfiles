@@ -58,6 +58,16 @@ eval "$( pyenv init - )"
 
 
 #
+# Node.js
+#
+if shopt -q 'login_shell'; then
+  export NVM_DIR="${HOME}/.nvm"
+fi
+
+source $( brew --prefix )/opt/nvm/nvm.sh
+
+
+#
 # PATH重複排除
 #
 PATH="$( echo -n "${PATH}" | ruby -F: -a -n -e 'puts($F.uniq.join(":"))' )"
