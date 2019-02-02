@@ -49,8 +49,6 @@ if shopt -q 'login_shell'; then
 fi
 
 eval "$( goenv init - )"
-eval "$( vg eval --shell bash )"
-alias vg-activate='__vg_prompt_command'
 
 
 #
