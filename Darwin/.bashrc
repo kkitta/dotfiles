@@ -16,7 +16,7 @@ fi
 alias ls='ls -AG'
 alias web='python -m SimpleHTTPServer'
 
-source $( brew --prefix )/etc/bash_completion
+source $( brew --prefix )/etc/profile.d/bash_completion.sh
 
 
 #
