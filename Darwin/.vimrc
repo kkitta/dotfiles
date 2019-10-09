@@ -8,6 +8,7 @@ Plugin 'slim-template/vim-slim'
 Plugin 'cespare/vim-toml'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'moby/moby', {'rtp': '/contrib/syntax/vim/'}
+Plugin 'leafgarland/typescript-vim'
 
 call vundle#end()
 
