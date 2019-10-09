@@ -68,6 +68,13 @@ source $( brew --prefix )/opt/nvm/nvm.sh
 
 
 #
+# Google Cloud SDK
+#
+source $( brew --prefix )/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc
+source $( brew --prefix )/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc
+
+
+#
 # PATH重複排除
 #
 PATH="$( echo -n "${PATH}" | ruby -F: -a -n -e 'puts($F.uniq.join(":"))' )"
