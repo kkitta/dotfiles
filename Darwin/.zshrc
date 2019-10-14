@@ -11,6 +11,8 @@ if [[ -o 'login' ]]; then
   export EDITOR='/usr/bin/vim'
 fi
 
+bindkey -e
+
 alias ls='ls -AG'
 alias web='python -m SimpleHTTPServer'
 
